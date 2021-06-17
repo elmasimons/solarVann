@@ -34,6 +34,8 @@ A common platform for solar providers and individuals to come together and creat
 - Automation Runbook on Azure
 # What next?
 ![Solar-Vann Roadmap](./roadmap.png)
+
 # How to get started ?
 
 # How to Contribute ? 
+Please ![click here](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. 
