@@ -13,17 +13,18 @@ A common platform for solar providers and individuals to come together and creat
 
 # What is Solar-Vann?
    - ## The problem ?
-     Solar solutions have been around for more than a decade now, yet urban India is very dependent on the commond energy sources available in big cities and yet to fully     embrace the alternative clean energy solutions. With new regulations by city corporations it has now become imperative to look at clean energy solutions. Yet this journey towards clean envrionemnt free energy sources is riddled with practical problems starting with heavy investment to finding the right provider who can support our needs.
+     Solar solutions have been around for more than a decade now, yet urban and rural India is very dependent on the commond energy sources available in big cities and yet to fully embrace the alternative clean energy solutions. With new regulations by city corporations it has now become imperative to look at clean energy solutions. Yet this journey towards clean green energy sources is riddled with practical problems starting with heavy investment to finding the right provider who can support our needs to simply not being able to install it.
    
    - ## How can technology help ?
-   By creating a common platform for home owners and providers alike in urban localities to link up and create a custom solution for their energy needs using solar or hybrid solutions. To share common goals for your communities to commit to share and make use of resources for the benefit of your larger community
+   A common platform for home owners/small businesses and providers alike in urban/rural localities to collaborate and find solutions to solve the energy needs using solar or hybrid solutions. From using mobile solar powered units for quick and short term usage to permanent solutions with the help of like minded investors to support these projects for the community at large.
    
    - ## The Idea
-   A web/mobile based solution to allow users and service providers to connect. A means to find crowd funding options to help with your solar/hybrid projects. To support the larger community needs and contribute in improving your locality
+   A web/mobile based solution to allow users and service providers to connect. A means to locate mobile power units for short term needs and find crowd funding options to help setup your solar/hybrid projects. To support the larger community needs and contribute in improving your locality
    
 # Demo Video
 
 # The Architecture
+![Solar-Vann Architecture](./architecture.gif)
 
 # Components Used
 
