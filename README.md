@@ -32,6 +32,8 @@ A common platform for solar providers and individuals to come together and creat
 - Logic App on Azure
 - SQL Database on Azure
 - Automation Runbook on Azure
+- PowerBI 
+- Event Grids
 # What next?
 ![Solar-Vann Roadmap](./roadmap.png)
 
