@@ -22,7 +22,8 @@ A common platform for solar providers and individuals to come together and creat
    A web/mobile based solution to allow users and service providers to connect. A means to locate mobile power units for short term needs and find crowd funding options to help setup your solar/hybrid projects. To support the larger community needs and contribute in improving your locality
    
 # Demo Video
-
+Here is a demo of the Moble-Van use case from Solar-vann
+![Mobile Power demo](./solar-vann2.mp4)
 # The Architecture
 ![Solar-Vann Architecture](./architecture.gif)
 
