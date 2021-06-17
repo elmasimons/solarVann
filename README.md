@@ -29,7 +29,7 @@ A common platform for solar providers and individuals to come together and creat
 # Components Used
 
 # What next?
-
+![Solar-Vann Roadmap](./roadmap.png)
 # How to get started ?
 
 # How to Contribute ? 
