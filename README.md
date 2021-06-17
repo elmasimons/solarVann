@@ -2,14 +2,14 @@
 A common platform for solar providers and individuals to come together and create clean energy solutions for the community.
 
 # Table of Contents
- - ## What is Solar-Vann?
- - ## A short demo
- - ## The Architecture
- - ## Components Used
- - ## Detailed Description
- - ## What Next?
- - ## How to get started?
- - ## How to Contribute?
+ - ### What is Solar-Vann?
+ - ### A short demo
+ - ### The Architecture
+ - ### Components Used
+ - ### Detailed Description
+ - ### What Next?
+ - ### How to get started?
+ - ### How to Contribute?
 
 # What is Solar-Vann?
    - ## The problem ?
@@ -27,7 +27,11 @@ A common platform for solar providers and individuals to come together and creat
 ![Solar-Vann Architecture](./architecture.gif)
 
 # Components Used
-
+- IBM Cloud IOT Platform
+- IBM ???
+- Logic App on Azure
+- SQL Database on Azure
+- Automation Runbook on Azure
 # What next?
 ![Solar-Vann Roadmap](./roadmap.png)
 # How to get started ?
