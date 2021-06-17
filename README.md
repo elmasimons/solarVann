@@ -38,4 +38,4 @@ A common platform for solar providers and individuals to come together and creat
 # How to get started ?
 
 # How to Contribute ? 
-Please ![click here](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. 
+Please [click here](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us. 
