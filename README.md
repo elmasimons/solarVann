@@ -35,12 +35,13 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
   ![System Context](./System-Context.gif)
 
 # Components Used
-- IBM Cloud IOT Platform
-- IBM Event Streams is a high-throughput message bus built with Apache Kafka.
-- IBM App Connect - equivalent for Logic apps
+- Angular UI app on IBM cloud
+- Azure Logic apps (to be replaced with IBM App Connect)
 - SQL Database on Azure
-- Automation Runbook on Azure
-- PowerBI 
+- IBM Event Streams is a high-throughput message bus built with Apache Kafka. (TBD)
+- IBM Cloud IOT Platform (TBD)
+- Automation Runbook on Azure (TBD)
+- PowerBI (TBD)
 
 # What next?
 
