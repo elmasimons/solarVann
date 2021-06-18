@@ -23,7 +23,7 @@ A common platform for solar providers and individuals to come together and creat
    
 # Demo Video
 Here is a demo of the Moble-Van use case from Solar-vann
-![Mobile Power demo](./solar-vann2.mp4)
+[![Mobile Power demo](./video-snapshot.png)](https://youtu.be/OXWfdn0eLJI)
 # The Architecture
 ![Solar-Vann Architecture](./architecture.gif)
 
