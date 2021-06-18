@@ -32,7 +32,7 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
 
 # Components Used
 - IBM Cloud IOT Platform
-- IBM ???
+
 - Logic App on Azure
 - SQL Database on Azure
 - Automation Runbook on Azure
