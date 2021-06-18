@@ -28,7 +28,11 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
 
 # The Architecture
 
-![Solar-Vann Architecture](./architecture.gif)
+  ## Overview
+  ![Solar-Vann Architecture](./architecture.gif)
+
+  ## System Context
+  ![System Context](./System-Context.gif)
 
 # Components Used
 - IBM Cloud IOT Platform
