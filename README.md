@@ -63,7 +63,10 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
   - To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
  ## For Logic App
-API
+  - Exposed as an API which is using Azure Resource Manager template along with API connection. Import the tempalte into Azure cloud.
+     
+ ## For SQL Server
+  - Execute SQL script to create Table and insert Solar details data.
 
 # How to Contribute ? 
 Please [click here](./contributing.md) for details on our code of conduct, and the process for submitting pull requests to us. 
