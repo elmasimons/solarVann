@@ -1,0 +1,113 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workflows_lg_hack_solarvan_name": {
+            "defaultValue": "lg-hack-solarvan",
+            "type": "String"
+        },
+        "connections_sql_1_externalid": {
+            "defaultValue": "/subscriptions/a34d3874-0fa4-4a5d-8cab-e42eed31747e/resourceGroups/IBM-Hackathon/providers/Microsoft.Web/connections/sql-1",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Logic/workflows",
+            "apiVersion": "2017-07-01",
+            "name": "[parameters('workflows_lg_hack_solarvan_name')]",
+            "location": "eastus",
+            "properties": {
+                "state": "Enabled",
+                "definition": {
+                    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+                    "contentVersion": "1.0.0.0",
+                    "parameters": {
+                        "$connections": {
+                            "defaultValue": {},
+                            "type": "Object"
+                        }
+                    },
+                    "triggers": {
+                        "manual": {
+                            "type": "Request",
+                            "kind": "Http",
+                            "inputs": {
+                                "method": "GET",
+                                "schema": {}
+                            }
+                        }
+                    },
+                    "actions": {
+                        "Execute_a_SQL_query_(V2)_2": {
+                            "runAfter": {
+                                "Filter_array": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "ApiConnection",
+                            "inputs": {
+                                "body": {
+                                    "query": "select * from dbo.solardetails"
+                                },
+                                "host": {
+                                    "connection": {
+                                        "name": "@parameters('$connections')['sql_1']['connectionId']"
+                                    }
+                                },
+                                "method": "post",
+                                "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('default'))},@{encodeURIComponent(encodeURIComponent('default'))}/query/sql"
+                            }
+                        },
+                        "Filter_array": {
+                            "runAfter": {
+                                "LocationDetails": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Query",
+                            "inputs": {
+                                "from": "@body('LocationDetails')['result']",
+                                "where": "@equals(item()?['postalLocation'], 'Dumdum')"
+                            }
+                        },
+                        "LocationDetails": {
+                            "runAfter": {},
+                            "type": "Http",
+                            "inputs": {
+                                "method": "GET",
+                                "uri": "https://api.worldpostallocations.com/pincode?postalcode=700028&countrycode=IN"
+                            }
+                        },
+                        "Response": {
+                            "runAfter": {
+                                "Execute_a_SQL_query_(V2)_2": [
+                                    "Succeeded"
+                                ]
+                            },
+                            "type": "Response",
+                            "kind": "Http",
+                            "inputs": {
+                                "body": "@body('Execute_a_SQL_query_(V2)_2')?['resultsets']",
+                                "statusCode": 200
+                            }
+                        }
+                    },
+                    "outputs": {}
+                },
+                "parameters": {
+                    "$connections": {
+                        "value": {
+                            "sql_1": {
+                                "connectionId": "[parameters('connections_sql_1_externalid')]",
+                                "connectionName": "sql-1",
+                                "id": "/subscriptions/a34d3874-0fa4-4a5d-8cab-e42eed31747e/providers/Microsoft.Web/locations/eastus/managedApis/sql"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
