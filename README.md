@@ -13,18 +13,21 @@ A common platform for solar providers and individuals to come together and creat
 
 # What is Solar-Vann?
    - ## The problem ?
-     Solar solutions have been around for more than a decade now, yet urban and rural India is very dependent on the commond energy sources available in big cities and yet to fully embrace the alternative clean energy solutions. With new regulations by city corporations it has now become imperative to look at clean energy solutions. Yet this journey towards clean green energy sources is riddled with practical problems starting with heavy investment to finding the right provider who can support our needs to simply not being able to install it.
+     Solar solutions have been around for more than a decade now, yet urban and rural India is very dependent on the energy sources provided in big cities and are yet to fully embrace the alternative clean energy solutions. With new regulations by city corporations it has now become imperative to look at clean energy solutions. However this journey towards clean green energy sources is riddled with practical problems starting with heavy investment to finding the right provider who can support our needs to simply not being able to install it.
    
    - ## How can technology help ?
-   A common platform for home owners/small businesses and providers alike in urban/rural localities to collaborate and find solutions to solve the energy needs using solar or hybrid solutions. From using mobile solar powered units for quick and short term usage to permanent solutions with the help of like minded investors to support these projects for the community at large.
+   A common platform for home owners/small businesses and providers alike in urban/rural localities to collaborate and find solutions to solve their energy needs using solar or hybrid solutions. From using mobile solar powered units for quick and short term usage to permanent solutions like roof top installations... end users can now with the help of like minded investors can take on projects to help themselves and the community at large.
    
    - ## The Idea
-   A web/mobile based solution to allow users and service providers to connect. A means to locate mobile power units for short term needs and find crowd funding options to help setup your solar/hybrid projects. To support the larger community needs and contribute in improving your locality
+   A web/mobile based solution to allow users and solar service providers to connect. A one-shop stop for all your solar needs from being able to hire a mobile power unit for short term needs to finding crowd funding options to help setup your very own solar/hybrid projects. This platform aims to bring together end users and suppliers along with investors to realize this journey towards clean green energy.
    
 # Demo Video
-Here is a demo of the Moble-Van use case from Solar-vann
+Here is a demo of the Mobile-Van use case offering from Solar-vann
+
 [![Mobile Power demo](./video-snapshot.png)](https://youtu.be/OXWfdn0eLJI)
+
 # The Architecture
+
 ![Solar-Vann Architecture](./architecture.gif)
 
 # Components Used
@@ -35,7 +38,9 @@ Here is a demo of the Moble-Van use case from Solar-vann
 - Automation Runbook on Azure
 - PowerBI 
 - Event Grids
+
 # What next?
+
 ![Solar-Vann Roadmap](./roadmap.png)
 
 # How to get started ?
