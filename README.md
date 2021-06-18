@@ -35,13 +35,16 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
   ![System Context](./System-Context.gif)
 
 # Components Used
-- Angular UI app on IBM cloud
+- Angular UI app on IBM cloud Cloud Foundry
+- DevOps on IBM cloud
 - Azure Logic apps (to be replaced with IBM App Connect)
 - SQL Database on Azure
 - IBM Event Streams is a high-throughput message bus built with Apache Kafka. (TBD)
 - IBM Cloud IOT Platform (TBD)
 - Automation Runbook on Azure (TBD)
 - PowerBI (TBD)
+
+Link to Angular UI App: https://solarvann-wise-roan.eu-gb.mybluemix.net/
 
 # What next?
 
