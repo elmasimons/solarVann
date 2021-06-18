@@ -70,3 +70,12 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
 
 # How to Contribute ? 
 Please [click here](./contributing.md) for details on our code of conduct, and the process for submitting pull requests to us. 
+
+# Meet the Team.
+
+1. Sormita Chakraborty - sorchakr@in.ibm.com
+2. Krithika S Udupa - krsudup1@in.ibm.com
+3. Disary Nath - disary.nath.sarkar@ibm.com
+4. Sharmishtha Sarkar - sharsark@in.ibm.com
+5. Elma Simons - elma.simons@in.ibm.com
+
