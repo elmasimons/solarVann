@@ -32,12 +32,11 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
 
 # Components Used
 - IBM Cloud IOT Platform
-
-- Logic App on Azure
+- IBM Event Streams is a high-throughput message bus built with Apache Kafka.
+- IBM App Connect - equivalent for Logic apps
 - SQL Database on Azure
 - Automation Runbook on Azure
 - PowerBI 
-- Event Grids
 
 # What next?
 
@@ -64,7 +63,7 @@ Here is a demo of the Mobile-Van use case offering from Solar-vann
   - To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
  ## For Logic App
-
+API
 
 # How to Contribute ? 
 Please [click here](./contributing.md) for details on our code of conduct, and the process for submitting pull requests to us. 
