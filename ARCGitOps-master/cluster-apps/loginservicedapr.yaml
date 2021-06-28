@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:    
+    kompose.cmd: XXXXXX\tools\kompose.exe
+      convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: loginservicedapr
+  name: loginservicedapr
+spec:   
+  selector:
+    matchLabels:
+      io.kompose.service: loginservicedapr
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: XXXXXX\kompose.exe
+          convert
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: loginservicedapr
+    spec:
+      imagePullSecrets:
+       - name: regcred 
+      containers:       
+      - env:
+        - name: ConnectionString
+          value: ' User ID=postgres;Password=secret1234;Host=postgresdata-postgresql;Port=5432;Database=postgresdb;'
+        image: arck8scr.azurecr.io/loginservicedapr:1522
+        imagePullPolicy: ""
+        name: loginservicedapr
+        resources:
+          requests:
+            cpu: "250m"
+          limits:
+            cpu: "500m"
+        ports:
+        - containerPort: 80        
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes: null
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: XXXXXXXXXX\kompose.exe
+      convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: loginservicedapr
+  name: loginservicedapr
+spec:
+  type: LoadBalancer
+  ports:
+  - name: "5016"
+    port: 5016
+    targetPort: 80
+  selector:
+    io.kompose.service: loginservicedapr
+status:
+  loadBalancer: {}
